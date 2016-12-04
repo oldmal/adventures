@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Adventures</title>
+  <!-- Behavioral Meta Data -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Dmytro Oliinyk">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/owl.carousel.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/owl.theme.default.css"/>
+</head>
+<body>
+<div id="page-preloader"><span class="spinner"></span></div>
+  <!-- begin Main parallax -->
+  <div id= "container_parallax" class="container_parallax">
+    <ul id="scene_parallax" class="scene_parallax">
+      <li class="layer" data-depth="0.05"></li>
+      <li class="layer" data-depth="0.1"></li>
+      <li class="layer" data-depth="0.15"></li>
+      <li class="layer" data-depth="0.20"></li>
+      <li class="layer" data-depth="0.30"></li>
+    </ul>
+    <div class="text">
+      <p>Move your mouse<br>
+      to see cool effect </p>
+    </div>
+  </div>
+  <audio autoplay onclick="playPause()" id="main-audio">
+    <source src="audio/rhcp.ogg" type='audio/ogg; codecs=vorbis'/>
+    <source src="audio/rhcp.mp3" type="audio/mpeg"/>
+  <p>This browser does not support our audio format.</p>
+  </audio>
+  <span class="play-pause pause" onclick="playPause()"></span>
+  <!-- end Main parallax -->
+  <!-- begin wipes(manual) -->
+  <section class="wipes-simple blue" id="blue">
+    <span id="blue_1">Remember,</span>
+  </section>
+  <section class="wipes-simple turqoise" id="turqoise">
+    <span id="turqoise_1">we live in a wonderful world</span>
+  </section>
+  <section class="wipes-simple green" id="green">
+    <span id="green_1">that is full of beauty,</span>
+  </section>
+  <section class="wipes-simple bordeaux" id="bordeaux">
+    <span id="bordeaux_1" >charm and adventure. </span>
+  </section>
+  <section class="wipes-simple yellow" id="yellow">
+    <span id="yellow_1">There is no end to the adventures we can have</span>
+  </section>
+  <section class="wipes-simple orange" id="orange">
+    <span id="orange_1">if only we seek them</span>
+  </section>
+  <section class="wipes-simple chrome" id="chrome">
+    <span  id="chrome_1">with our eyes open.</span>
+    <img id="mouse" class="mouse" src="images/skiing.png" alt="#">
+  </section>
+  <section class="wipes-simple silver" id="silver">
+    <span  id="silver_1"><a href="http://www.bookrags.com/biography/jawaharlal-nehru/#gsc.tab=0" target="_blank">- Jawaharial Nehru</a></span>
+  </section>
+  <!-- end wipes -->
+  <div class="cont-footer">
+    <!-- begin photo-lib -->
+      <div class="owl-carousel photo-lib">
+        <div class="item1 item"></div>
+        <div class="item2 item"></div>
+        <div class="item3 item"></div>
+        <div class="item4 item"></div>
+        <div class="item5 item"></div>
+        <div class="item6 item"></div>
+        <div class="item7 item"></div>
+        <div class="item8 item"></div>
+        <div class="item9 item"></div>
+        <div class="item10 item"></div>
+        <div class="item11 item"></div>
+        <div class="item12 item"></div>
+        <div class="item13 item"></div>
+        <div class="item14 item"></div>
+        <div class="item15 item"></div>
+        <div class="item16 item"></div>
+      </div>
+    <!-- end photo-lib -->
+    <div class="choice">
+      <form>
+        <input type="button" value="Watch some random video to get inspired" onClick="randomlinks()">
+      </form>
+    </div>
+  </div>
+<footer>
+  <p>Website Developed By <a href="http://www.oldmal.com" target="_blank">Dmytro Oliinyk</a>
+  </p>
+</footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script> <!-- для того чтоб красиво отображалось масштабирование шрифтов нужно использоать именно версию 1.14.2 -->
+  <script src="js/ScrollMagic.js"></script>
+  <script src="js/animation.gsap.js"></script>
+  <script src="js/debug.addIndicators.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script src="js/allscripts.js"></script>
+  <script>
+    $(window).on('load', function () {
+      var $preloader = $('#page-preloader'),
+          $spinner   = $preloader.find('.spinner');
+      $spinner.fadeOut();
+      $preloader.delay(350).fadeOut('slow');
+  });
+  </script>
+</body>
+</html>
+
+
